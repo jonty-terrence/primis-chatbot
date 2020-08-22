@@ -42,7 +42,7 @@ export const routes = [
 
   /* The first rule matches if and only if we get the text 'start' and will execute the 
         React component defined in pages/actions/start.js */
-  { path: 'start', text: 'start', action: Start },
+  { path: 'start', text: 'hey', action: Start },
 
   /* Another text rule (perfect match) to trigger the 'end' action */
   { path: 'end', text: 'end', action: End },
