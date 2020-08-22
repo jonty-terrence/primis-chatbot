@@ -13,6 +13,7 @@ import Quickreply from './actions/quickreply'
 import QuickreplyResponse from './actions/quickreply_response'
 import Webviews from './actions/webviews'
 import WebviewsResponse from './actions/webviews_response'
+import Weather from './actions/weather'
 
 export const routes = [
   /* Routes map user inputs to actions (React Components)
@@ -46,6 +47,8 @@ export const routes = [
 
   /* Another text rule (perfect match) to trigger the 'end' action */
   { path: 'end', text: 'end', action: End },
+
+  { path: 'weather', text: 'weather', action: Weather },
 
   /* These rules use a case insensitive regexp to match text messages that contain
         a certain text, for example the 1st one will capture 'BUTTONS', 'Buttons', etc */
