@@ -7,7 +7,7 @@ const forecastUrl = 'api.openweathermap.org/data/2.5/weather?q=Auckland&appid=ed
 
 export default class extends React.Component {
 
-    state = {}
+    state = { }
 
     componentDidMount () {
         request.get(forecastUrl)
@@ -21,7 +21,7 @@ export default class extends React.Component {
     return (
       <>
       <Text>
-          The weather in Auckland is {this.state.forecast.visibility}. 
+          The weather in Auckland is {this.state.forecast.weather.main}. 
       </Text>
       </>
     )
